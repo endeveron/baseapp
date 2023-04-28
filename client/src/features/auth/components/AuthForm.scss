@@ -1,0 +1,20 @@
+@use 'style/mixin';
+
+.auth-form {
+  @include mixin.flex-col-center();
+
+  &__fields-wrapper {
+    width: 22rem;
+    padding: 2rem;
+  }
+
+  &__button {
+    width: 12rem;
+  }
+
+  &__field {
+    & ~ & {
+      margin-top: 1rem;
+    }
+  }
+}
